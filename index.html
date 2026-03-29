@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anirban Das — Portfolio</title>
+  <meta name="description" content="Anirban Das | BTech CSE Student &amp; Web Developer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- GLOBAL ANIMATED BACKGROUND -->
+  <div class="global-bg-orbs" aria-hidden="true">
+    <div class="global-orb global-orb-1"></div>
+    <div class="global-orb global-orb-2"></div>
+    <div class="global-orb global-orb-3"></div>
+    <div class="global-orb global-orb-4"></div>
+    <div class="global-orb global-orb-5"></div>
+  </div>
+  <div class="global-grid-mesh" aria-hidden="true"></div>
+  <div class="global-sparks" aria-hidden="true">
+    <div class="spark"></div>
+    <div class="spark"></div>
+    <div class="spark"></div>
+    <div class="spark"></div>
+    <div class="spark"></div>
+    <div class="spark"></div>
+    <div class="spark"></div>
+    <div class="spark"></div>
+    <div class="spark"></div>
+    <div class="spark"></div>
+    <div class="spark"></div>
+    <div class="spark"></div>
+  </div>
+ 
+  <!-- PAGE LOADER -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">AD</div>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+ 
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+ 
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>AD<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"     class="nav-link active">Home</a></li>
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#skills"   class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+ 
+  <main>
+ 
+    <!-- ==================== HERO ==================== -->
+    <section id="home" class="section hero-section">
+      <div class="hero-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <canvas id="particles-canvas"></canvas>
+      </div>
+ 
+      <div class="hero-content">
+        <div class="hero-tag reveal">
+          <span class="dot"></span> Available for opportunities
+        </div>
+ 
+        <h1 class="hero-name reveal">
+          <span class="line">Hi, I'm</span>
+          <span class="line name-with-orbit">
+            <span class="name-gradient">Anirban Das</span>
+            <span class="skill-orbit" aria-hidden="true">
+              <span class="orbit-ring orbit-ring-1">
+                <span class="orbit-dot"><span class="orbit-label">DSA</span></span>
+                <span class="orbit-dot"><span class="orbit-label">AI</span></span>
+                <span class="orbit-dot"><span class="orbit-label">ML</span></span>
+                <span class="orbit-dot"><span class="orbit-label">Cloud</span></span>
+              </span>
+              <span class="orbit-ring orbit-ring-2">
+                <span class="orbit-dot"><span class="orbit-label">Prompt</span></span>
+                <span class="orbit-dot"><span class="orbit-label">Python</span></span>
+                <span class="orbit-dot"><span class="orbit-label">Algo</span></span>
+                <span class="orbit-dot"><span class="orbit-label">SQL</span></span>
+              </span>
+              <span class="orbit-center"><i class="fas fa-brain"></i></span>
+            </span>
+          </span>
+        </h1>
+ 
+        <div class="hero-role reveal">
+          <span class="role-prefix">I'm a </span>
+          <span id="typed-text" class="typed-text"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+ 
+        <p class="hero-desc reveal">
+          Passionate BTech CSE student crafting elegant web experiences and turning data into insights.
+          Building tomorrow's solutions, one line of code at a time.
+        </p>
+ 
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+          <a href="#contact"  class="btn btn-ghost">Let's Connect</a>
+        </div>
+ 
+        <div class="hero-social reveal">
+          <a href="https://github.com/Anirban-Das04/" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/anirban-das-1332473b9/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="/cdn-cgi/l/email-protection#9efff0f7ecfcfff0defbe6fff3eef2fbb0fdf1f3" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+ 
+      <div class="hero-card reveal">
+        <div class="glass-card hero-stats-card">
+          <div class="stat-item">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="15">0</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">2027</span>
+            <span class="stat-label">Graduating</span>
+          </div>
+        </div>
+      </div>
+ 
+      <a href="#about" class="scroll-cue">
+        <span>Scroll</span>
+        <div class="scroll-arrow"></div>
+      </a>
+    </section>
+ 
+ 
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// About Me</span>
+          <h2 class="section-title">The Story So Far</h2>
+        </div>
+ 
+        <div class="about-grid">
+          <!-- Left -->
+          <div class="about-left reveal">
+            <div class="avatar-wrapper">
+              <div class="avatar-ring"></div>
+              <div class="avatar-placeholder">
+                <span class="avatar-initials">AD</span>
+              </div>
+              <div class="avatar-badge"><i class="fas fa-code"></i> Data Analyst</div>
+            </div>
+ 
+            <div class="education-block glass-card">
+              <h3 class="block-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-year">2023–2027</span>
+                    <h4>B.Tech in CSE</h4>
+                    <p>Sister Nivedita University</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-year">2023</span>
+                    <h4>Higher Secondary</h4>
+                    <p>Howrah Zilla School</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+          <!-- Right -->
+          <div class="about-right">
+            <div class="about-bio reveal">
+              <p>I'm <strong>Anirban Das</strong>, a BTech Computer Science student at Sister Nivedita University
+                 with a deep passion for <em>web development</em> and <em>data analytics</em>. I love building
+                 things that live on the internet and extracting meaningful stories from raw data.</p>
+              <p>When I'm not coding, you'll find me exploring new technologies, contributing to projects,
+                 and constantly leveling up my skill set.</p>
+            </div>
+ 
+            <div class="skills-grid reveal">
+              <div class="skill-category glass-card">
+                <div class="skill-cat-icon"><i class="fas fa-globe"></i></div>
+                <h4>Web</h4>
+                <div class="skill-tags">
+                  <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+                </div>
+              </div>
+              <div class="skill-category glass-card">
+                <div class="skill-cat-icon"><i class="fas fa-terminal"></i></div>
+                <h4>Programming</h4>
+                <div class="skill-tags">
+                  <span class="tag">C</span><span class="tag">C++</span><span class="tag">Python</span>
+                </div>
+              </div>
+              <div class="skill-category glass-card">
+                <div class="skill-cat-icon"><i class="fas fa-database"></i></div>
+                <h4>Data</h4>
+                <div class="skill-tags">
+                  <span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">Oracle</span>
+                </div>
+              </div>
+              <div class="skill-category glass-card">
+                <div class="skill-cat-icon"><i class="fas fa-chart-bar"></i></div>
+                <h4>Tools &amp; Libraries</h4>
+                <div class="skill-tags">
+                  <span class="tag">Power BI</span><span class="tag">Tableau</span>
+                  <span class="tag">NumPy</span><span class="tag">Pandas</span>
+                  <span class="tag">Matplotlib</span><span class="tag">Excel</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+ 
+    <!-- ==================== SKILLS ==================== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// What I Know</span>
+          <h2 class="section-title">Skills &amp; Expertise</h2>
+          <p class="section-subtitle">A diverse toolkit built through passion, practice, and constant curiosity.</p>
+        </div>
+ 
+        <div class="skills-masonry">
+ 
+          <!-- 1. Frontend -->
+          <div class="skill-block glass-card skill-block--web" data-tilt>
+            <div class="skill-block-header">
+              <div class="skill-block-icon"><i class="fas fa-globe"></i></div>
+              <div>
+                <h3 class="skill-block-title">Frontend Development</h3>
+                <p class="skill-block-sub">Building responsive, pixel-perfect UIs</p>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill"><i class="fab fa-html5"></i> HTML5</span>
+              <span class="skill-pill"><i class="fab fa-css3-alt"></i> CSS3</span>
+              <span class="skill-pill"><i class="fab fa-js"></i> JavaScript</span>
+              <span class="skill-pill pill-secondary"><i class="fas fa-mobile-alt"></i> Responsive</span>
+            </div>
+            <div class="skill-bar-group">
+              <div class="skill-bar-item">
+                <span>HTML / CSS</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <span>JavaScript</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+              </div>
+            </div>
+          </div>
+ 
+          <!-- 2. Data Analysis -->
+          <div class="skill-block glass-card skill-block--data" data-tilt>
+            <div class="skill-block-header">
+              <div class="skill-block-icon"><i class="fas fa-chart-line"></i></div>
+              <div>
+                <h3 class="skill-block-title">Data Analysis</h3>
+                <p class="skill-block-sub">Turning raw data into actionable insights</p>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill"><i class="fab fa-python"></i> Python</span>
+              <span class="skill-pill">Pandas</span>
+              <span class="skill-pill">NumPy</span>
+              <span class="skill-pill">Matplotlib</span>
+            </div>
+            <div class="skill-bar-group">
+              <div class="skill-bar-item">
+                <span>Python / Pandas</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <span>Data Visualization</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+              </div>
+            </div>
+          </div>
+ 
+          <!-- 3. Dashboards -->
+          <div class="skill-block glass-card skill-block--dash" data-tilt>
+            <div class="skill-block-header">
+              <div class="skill-block-icon"><i class="fas fa-tachometer-alt"></i></div>
+              <div>
+                <h3 class="skill-block-title">Dashboards &amp; BI</h3>
+                <p class="skill-block-sub">Visual stories from complex data</p>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Power BI</span>
+              <span class="skill-pill">Tableau</span>
+              <span class="skill-pill"><i class="fas fa-file-excel"></i> Excel</span>
+            </div>
+            <div class="skill-bar-group">
+              <div class="skill-bar-item">
+                <span>Power BI</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <span>Tableau / Excel</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="72"></div></div>
+              </div>
+            </div>
+          </div>
+ 
+          <!-- 4. Databases -->
+          <div class="skill-block glass-card skill-block--db" data-tilt>
+            <div class="skill-block-header">
+              <div class="skill-block-icon"><i class="fas fa-database"></i></div>
+              <div>
+                <h3 class="skill-block-title">Databases</h3>
+                <p class="skill-block-sub">Structured data management &amp; queries</p>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">MySQL</span>
+              <span class="skill-pill">PostgreSQL</span>
+              <span class="skill-pill">Oracle</span>
+            </div>
+            <div class="skill-bar-group">
+              <div class="skill-bar-item">
+                <span>SQL / MySQL</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <span>PostgreSQL / Oracle</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+              </div>
+            </div>
+          </div>
+ 
+          <!-- 5. DSA -->
+          <div class="skill-block glass-card skill-block--algo" data-tilt>
+            <div class="skill-block-header">
+              <div class="skill-block-icon"><i class="fas fa-brain"></i></div>
+              <div>
+                <h3 class="skill-block-title">DSA &amp; Problem Solving</h3>
+                <p class="skill-block-sub">Logic-first, efficiency-driven approach</p>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">C</span>
+              <span class="skill-pill">C++</span>
+              <span class="skill-pill"><i class="fab fa-python"></i> Python</span>
+              <span class="skill-pill pill-secondary">Algorithms</span>
+            </div>
+            <div class="skill-bar-group">
+              <div class="skill-bar-item">
+                <span>C / C++</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="76"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <span>Problem Solving</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+              </div>
+            </div>
+          </div>
+ 
+          <!-- 6. Tools & Design -->
+          <div class="skill-block glass-card skill-block--tools" data-tilt>
+            <div class="skill-block-header">
+              <div class="skill-block-icon"><i class="fas fa-tools"></i></div>
+              <div>
+                <h3 class="skill-block-title">Tools &amp; Design</h3>
+                <p class="skill-block-sub">From terminal to stunning visuals</p>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill"><i class="fab fa-git-alt"></i> Git</span>
+              <span class="skill-pill"><i class="fab fa-github"></i> GitHub</span>
+              <span class="skill-pill">Figma</span>
+              <span class="skill-pill">Canva</span>
+              <span class="skill-pill pill-secondary"><i class="fas fa-terminal"></i> Bash</span>
+              <span class="skill-pill pill-secondary">VS Code</span>
+            </div>
+            <div class="skill-bar-group">
+              <div class="skill-bar-item">
+                <span>Git / GitHub</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="84"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <span>Figma / Canva</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+              </div>
+            </div>
+          </div>
+ 
+        </div><!-- /.skills-masonry -->
+ 
+        <!-- AI + Learning row -->
+        <div class="skills-bottom reveal">
+ 
+          <!-- AI Tools Card -->
+          <div class="ai-tools-card glass-card">
+            <div class="ai-header">
+              <i class="fas fa-robot ai-icon"></i>
+              <div>
+                <h4>AI Tools I Use Daily</h4>
+                <p>Augmenting with cutting-edge AI</p>
+              </div>
+            </div>
+            <div class="ai-pills">
+              <span class="ai-pill"><span class="ai-dot"></span>ChatGPT</span>
+              <span class="ai-pill"><span class="ai-dot"></span>Claude</span>
+              <span class="ai-pill"><span class="ai-dot"></span>Perplexity</span>
+            </div>
+          </div>
+ 
+          <!-- Learning Ticker Card -->
+          <div class="learning-card glass-card">
+            <div class="learning-header">
+              <i class="fas fa-seedling learning-icon"></i>
+              <div>
+                <h4>Always Learning</h4>
+                <p>Improving every single day 🌱</p>
+              </div>
+            </div>
+            <div class="learning-ticker">
+              <div class="ticker-track">
+                <span>React</span><span>•</span>
+                <span>Machine Learning</span><span>•</span>
+                <span>TypeScript</span><span>•</span>
+                <span>Next.js</span><span>•</span>
+                <span>Cloud AWS</span><span>•</span>
+                <span>Docker</span><span>•</span>
+                <span>TensorFlow</span><span>•</span>
+                <span>FastAPI</span><span>•</span>
+                <span>React</span><span>•</span>
+                <span>Machine Learning</span><span>•</span>
+                <span>TypeScript</span><span>•</span>
+                <span>Next.js</span><span>•</span>
+              </div>
+            </div>
+          </div>
+ 
+        </div>
+ 
+      </div>
+    </section>
+ 
+ 
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// My Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">A selection of things I've built and explored.</p>
+        </div>
+ 
+        <div class="projects-grid">
+ 
+          <!-- FitPlan India — Featured -->
+          <div class="project-card glass-card reveal project-featured" data-tilt>
+            <div class="project-glow"></div>
+            <div class="project-featured-badge">🇮🇳 Featured</div>
+            <div class="project-header">
+              <div class="project-icon fitplan-icon"><i class="fas fa-dumbbell"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/Anirban-Das04/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://fitplan-india.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Live"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://fitplan-india.netlify.app/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;">FitPlan India 🏋️</a>
+            </h3>
+            <p class="project-desc">
+              A comprehensive Indian fitness &amp; diet platform with BMI calculator, Harris-Benedict calorie engine,
+              7-day personalised diet &amp; workout plans, real-time Chart.js progress tracker with streak system,
+              plateau detection AI, and 24 regional Indian meal plans featuring real foods like Dal, Paneer, Idli
+              &amp; Maacher Jhol. Multi-language: English, Hindi &amp; Bengali.
+            </p>
+            <div class="project-features">
+              <span class="feature-pill">🧮 BMI + Calories</span>
+              <span class="feature-pill">📊 Progress Tracker</span>
+              <span class="feature-pill">🥗 Indian Diet Optimizer</span>
+              <span class="feature-pill">🔥 Streak System</span>
+              <span class="feature-pill">🌍 3 Languages</span>
+              <span class="feature-pill">📈 Plateau Detection</span>
+            </div>
+            <div class="project-stack">
+              <span class="stack-tag">HTML</span>
+              <span class="stack-tag">CSS</span>
+              <span class="stack-tag">JavaScript</span>
+              <span class="stack-tag">Chart.js</span>
+              <span class="stack-tag">LocalStorage</span>
+            </div>
+          </div>
+ 
+          <!-- Sales Dashboard -->
+          <div class="project-card glass-card reveal" data-tilt>
+            <div class="project-glow"></div>
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/Anirban-Das04/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="project-link" aria-label="Live"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Sales Dashboard</h3>
+            <p class="project-desc">Interactive Power BI dashboard analyzing retail sales trends, KPIs, and customer segmentation using real-world datasets.</p>
+            <div class="project-stack">
+              <span class="stack-tag">Power BI</span>
+              <span class="stack-tag">SQL</span>
+              <span class="stack-tag">Power Query</span>
+            </div>
+          </div>
+ 
+          <!-- Student DB -->
+          <div class="project-card glass-card reveal" data-tilt>
+            <div class="project-glow"></div>
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-database"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/Anirban-Das04/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="project-link" aria-label="Live"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Student DB System</h3>
+            <p class="project-desc">PostgreSQL-backed student management system with CRUD operations, advanced queries, and a CLI interface written in Python.</p>
+            <div class="project-stack">
+              <span class="stack-tag">PostgreSQL</span>
+              <span class="stack-tag">Python</span>
+              <span class="stack-tag">SQL</span>
+            </div>
+          </div>
+ 
+          <!-- GitHub CTA -->
+          <div class="project-card project-cta-card reveal">
+            <i class="fab fa-github cta-icon"></i>
+            <h3>More on GitHub</h3>
+            <p>Explore all my repositories and open-source contributions.</p>
+            <a href="https://github.com/Anirban-Das04/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+              Visit GitHub <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+ 
+        </div>
+      </div>
+    </section>
+ 
+ 
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// Get In Touch</span>
+          <h2 class="section-title">Let's Build Something</h2>
+          <p class="section-subtitle">Whether it's a project idea, a collaboration, or just a hello — my inbox is always open.</p>
+        </div>
+ 
+        <div class="contact-grid">
+          <!-- Contact Links -->
+          <div class="contact-links reveal">
+            <a href="https://github.com/Anirban-Das04/" target="_blank" rel="noopener noreferrer" class="contact-card glass-card">
+              <div class="contact-card-icon github-icon"><i class="fab fa-github"></i></div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">GitHub</span>
+                <span class="contact-card-val">@Anirban-Das04</span>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/anirban-das-1332473b9/" target="_blank" rel="noopener noreferrer" class="contact-card glass-card">
+              <div class="contact-card-icon linkedin-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">LinkedIn</span>
+                <span class="contact-card-val">Anirban Das</span>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+            <a href="/cdn-cgi/l/email-protection#64050a0d1606050a24011c05091408014a070b09" class="contact-card glass-card">
+              <div class="contact-card-icon gmail-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">Gmail</span>
+                <span class="contact-card-val"><span class="__cf_email__" data-cfemail="b6d7d8dfc4d4d7d898d2d7c5f6d1dbd7dfda98d5d9db">[email&#160;protected]</span></span>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+          </div>
+ 
+          <!-- Contact Form -->
+          <div class="contact-form-wrap reveal">
+            <div class="glass-card contact-form-card">
+              <h3>Send a Message</h3>
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" autocomplete="off" />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="off" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="What's on your mind?"></textarea>
+              </div>
+              <button type="button" class="btn btn-primary btn-full" id="send-btn">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+              <p class="form-note" id="form-note"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">
+          <span class="logo-bracket">&lt;</span>AD<span class="logo-bracket">/&gt;</span>
+        </span>
+        <p class="footer-copy">&copy; 2025 Anirban Das. Crafted with <span class="heart">&#9825;</span> in West Bengal.</p>
+        <div class="footer-social">
+          <a href="https://github.com/Anirban-Das04/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/anirban-das-1332473b9/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="/cdn-cgi/l/email-protection#05646b6c7767646b45607d64687569602b666a68" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- SCRIPTS -->
+  <script defer src="script.js"></script>
+</body>
+</html>
