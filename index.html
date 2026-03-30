@@ -59,11 +59,15 @@
         <li><a href="#about"    class="nav-link">About</a></li>
         <li><a href="#skills"   class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#cv-section" class="nav-link">CV</a></li>
         <li><a href="#contact"  class="nav-link">Contact</a></li>
       </ul>
       <div class="nav-actions">
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
           <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="btn-download-cv" id="nav-download-cv" onclick="downloadCV()" aria-label="Download CV">
+          <i class="fas fa-download"></i> <span>CV</span>
         </button>
         <button class="hamburger" id="hamburger" aria-label="Menu">
           <span></span><span></span><span></span>
@@ -124,13 +128,15 @@
  
         <div class="hero-cta reveal">
           <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
-          <a href="#contact"  class="btn btn-ghost">Let's Connect</a>
+          <button onclick="downloadCV()" class="btn btn-ghost btn-cv-hero">
+            <i class="fas fa-file-arrow-down"></i> Download CV
+          </button>
         </div>
  
         <div class="hero-social reveal">
           <a href="https://github.com/Anirban-Das04/" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
           <a href="https://www.linkedin.com/in/anirban-das-1332473b9/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="mailto:anirban.0009254@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="/cdn-cgi/l/email-protection#7a1b141308181b14544a4a4a43484f4e3a1d171b131654191517" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
  
@@ -610,11 +616,11 @@
               </div>
               <i class="fas fa-arrow-right contact-arrow"></i>
             </a>
-            <a href="mailto:anirban.0009254@gmail.com" class="contact-card glass-card">
+            <a href="/cdn-cgi/l/email-protection#ec8d82859e8e8d82c2dcdcdcd5ded9d8ac8b818d8580c28f8381" class="contact-card glass-card">
               <div class="contact-card-icon gmail-icon"><i class="fas fa-envelope"></i></div>
               <div class="contact-card-info">
                 <span class="contact-card-label">Gmail</span>
-                <span class="contact-card-val">anirban.0009254@gmail.com</span>
+                <span class="contact-card-val"><span class="__cf_email__" data-cfemail="5a3b343328383b34746a6a6a63686f6e1a3d373b333674393537">[email&#160;protected]</span></span>
               </div>
               <i class="fas fa-arrow-right contact-arrow"></i>
             </a>
@@ -647,6 +653,250 @@
     </section>
  
   </main>
+
+  <!-- ==================== CV SECTION ==================== -->
+  <section id="cv-section" class="section cv-showcase-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// My Resume</span>
+        <h2 class="section-title">Curriculum Vitae</h2>
+        <p class="section-subtitle">A snapshot of my education, skills &amp; experience — ready to download.</p>
+      </div>
+      <div class="cv-showcase-grid reveal">
+        <!-- CV Preview Card -->
+        <div class="cv-preview-card glass-card">
+          <div class="cv-preview-header">
+            <div class="cv-doc-icon"><i class="fas fa-file-pdf"></i></div>
+            <div>
+              <h3 class="cv-preview-title">Anirban Das</h3>
+              <p class="cv-preview-sub">BTech CSE · Web Dev · Data Analyst</p>
+            </div>
+          </div>
+          <div class="cv-preview-lines">
+            <div class="cv-line-group">
+              <span class="cv-line-label"><i class="fas fa-graduation-cap"></i> Education</span>
+              <div class="cv-line long"></div>
+              <div class="cv-line medium"></div>
+            </div>
+            <div class="cv-line-group">
+              <span class="cv-line-label"><i class="fas fa-code"></i> Skills</span>
+              <div class="cv-pills-preview">
+                <span>HTML</span><span>CSS</span><span>JS</span><span>Python</span><span>SQL</span>
+              </div>
+            </div>
+            <div class="cv-line-group">
+              <span class="cv-line-label"><i class="fas fa-briefcase"></i> Projects</span>
+              <div class="cv-line long"></div>
+              <div class="cv-line short"></div>
+            </div>
+            <div class="cv-line-group">
+              <span class="cv-line-label"><i class="fas fa-certificate"></i> Certifications</span>
+              <div class="cv-line medium"></div>
+            </div>
+          </div>
+          <div class="cv-preview-footer">
+            <span class="cv-badge"><i class="fas fa-circle-check"></i> Up to date</span>
+            <span class="cv-format">PDF Format</span>
+          </div>
+        </div>
+
+        <!-- CV Download Info -->
+        <div class="cv-info-panel">
+          <ul class="cv-features">
+            <li class="reveal">
+              <div class="cv-feat-icon"><i class="fas fa-user-tie"></i></div>
+              <div>
+                <h4>Professional Summary</h4>
+                <p>Complete academic background, skills &amp; project highlights.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="cv-feat-icon"><i class="fas fa-chart-bar"></i></div>
+              <div>
+                <h4>Technical Skills</h4>
+                <p>Frontend, programming, data tools, and analytics stack.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="cv-feat-icon"><i class="fas fa-folder-open"></i></div>
+              <div>
+                <h4>Project Portfolio</h4>
+                <p>Key projects with tech stacks and live links.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="cv-feat-icon"><i class="fas fa-medal"></i></div>
+              <div>
+                <h4>Certifications &amp; Courses</h4>
+                <p>Verified credentials and continuous learning journey.</p>
+              </div>
+            </li>
+          </ul>
+          <div class="cv-download-actions reveal">
+            <button class="btn btn-primary btn-download-main" onclick="downloadCV()">
+              <i class="fas fa-file-arrow-down"></i> Download PDF
+            </button>
+            <button class="btn btn-ghost" onclick="document.getElementById('cv-modal').classList.add('open')">
+              <i class="fas fa-eye"></i> Preview CV
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CV FULL-SCREEN MODAL / PREVIEW -->
+  <div id="cv-modal" class="cv-modal" role="dialog" aria-modal="true" aria-label="CV Preview">
+    <div class="cv-modal-backdrop" onclick="document.getElementById('cv-modal').classList.remove('open')"></div>
+    <div class="cv-modal-panel">
+      <button class="cv-modal-close" onclick="document.getElementById('cv-modal').classList.remove('open')" aria-label="Close">
+        <i class="fas fa-xmark"></i>
+      </button>
+      <div class="cv-modal-actions">
+        <button class="btn btn-primary btn-sm" onclick="downloadCV()">
+          <i class="fas fa-download"></i> Download PDF
+        </button>
+      </div>
+      <!-- ACTUAL CV CONTENT (rendered for print) -->
+      <div class="cv-document" id="cv-document">
+        <div class="cv-doc-header">
+          <div class="cv-doc-avatar">AD</div>
+          <div class="cv-doc-title-block">
+            <h1>Anirban Das</h1>
+            <p class="cv-doc-role">BTech CSE Student &amp; Web Developer</p>
+            <div class="cv-doc-contacts">
+              <span><i class="fas fa-envelope"></i> anirban@email.com</span>
+              <span><i class="fab fa-github"></i> Anirban-Das04</span>
+              <span><i class="fab fa-linkedin-in"></i> anirban-das-1332473b9</span>
+              <span><i class="fas fa-map-marker-alt"></i> West Bengal, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-doc-body">
+          <div class="cv-doc-left">
+            <!-- Education -->
+            <div class="cv-doc-section">
+              <h2 class="cv-section-heading"><i class="fas fa-graduation-cap"></i> Education</h2>
+              <div class="cv-entry">
+                <div class="cv-entry-header">
+                  <strong>B.Tech — Computer Science &amp; Engineering</strong>
+                  <span class="cv-year">2023 – 2027</span>
+                </div>
+                <p class="cv-entry-org">Sister Nivedita University, West Bengal</p>
+              </div>
+              <div class="cv-entry">
+                <div class="cv-entry-header">
+                  <strong>Higher Secondary (Science)</strong>
+                  <span class="cv-year">2023</span>
+                </div>
+                <p class="cv-entry-org">Howrah Zilla School</p>
+              </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="cv-doc-section">
+              <h2 class="cv-section-heading"><i class="fas fa-code"></i> Technical Skills</h2>
+              <div class="cv-skill-group">
+                <span class="cv-skill-cat">Frontend</span>
+                <div class="cv-skill-chips"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span></div>
+              </div>
+              <div class="cv-skill-group">
+                <span class="cv-skill-cat">Programming</span>
+                <div class="cv-skill-chips"><span>Python</span><span>C</span><span>C++</span></div>
+              </div>
+              <div class="cv-skill-group">
+                <span class="cv-skill-cat">Data &amp; Databases</span>
+                <div class="cv-skill-chips"><span>SQL</span><span>MySQL</span><span>PostgreSQL</span><span>Oracle</span></div>
+              </div>
+              <div class="cv-skill-group">
+                <span class="cv-skill-cat">Analytics &amp; Tools</span>
+                <div class="cv-skill-chips"><span>Power BI</span><span>Tableau</span><span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>Excel</span></div>
+              </div>
+              <div class="cv-skill-group">
+                <span class="cv-skill-cat">Other</span>
+                <div class="cv-skill-chips"><span>Git</span><span>GitHub</span><span>DSA</span><span>Prompt Engineering</span></div>
+              </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="cv-doc-section">
+              <h2 class="cv-section-heading"><i class="fas fa-certificate"></i> Certifications</h2>
+              <div class="cv-entry">
+                <strong>Data Analytics &amp; Visualization</strong>
+                <p class="cv-entry-org">Ongoing coursework — Tableau, Power BI</p>
+              </div>
+              <div class="cv-entry">
+                <strong>Python for Data Science</strong>
+                <p class="cv-entry-org">NumPy · Pandas · Matplotlib</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cv-doc-right">
+            <!-- Summary -->
+            <div class="cv-doc-section">
+              <h2 class="cv-section-heading"><i class="fas fa-user"></i> Profile</h2>
+              <p class="cv-summary">Passionate BTech CSE student with a keen interest in web development and data analytics. Experienced in building responsive web interfaces and developing data-driven solutions. Committed to continuous learning and creating meaningful digital experiences.</p>
+            </div>
+
+            <!-- Projects -->
+            <div class="cv-doc-section">
+              <h2 class="cv-section-heading"><i class="fas fa-folder-open"></i> Projects</h2>
+              <div class="cv-entry">
+                <div class="cv-entry-header">
+                  <strong>FitPlan India 🏋️</strong>
+                  <span class="cv-year">2024</span>
+                </div>
+                <p class="cv-entry-org">Live: fitplan-india.netlify.app</p>
+                <ul class="cv-entry-points">
+                  <li>Comprehensive Indian fitness &amp; diet platform with BMI calculator and Harris-Benedict calorie engine.</li>
+                  <li>7-day personalised diet &amp; workout plans with real-time Chart.js progress tracker and streak system.</li>
+                  <li>Multi-language support: English, Hindi &amp; Bengali. 24 regional Indian meal plans.</li>
+                  <li>Stack: HTML · CSS · JavaScript · Chart.js · LocalStorage</li>
+                </ul>
+              </div>
+              <div class="cv-entry">
+                <div class="cv-entry-header">
+                  <strong>Sales Dashboard</strong>
+                  <span class="cv-year">2024</span>
+                </div>
+                <ul class="cv-entry-points">
+                  <li>Interactive Power BI dashboard analyzing retail sales trends, KPIs, and customer segmentation.</li>
+                  <li>Stack: Power BI · SQL · Power Query</li>
+                </ul>
+              </div>
+              <div class="cv-entry">
+                <div class="cv-entry-header">
+                  <strong>Student DB System</strong>
+                  <span class="cv-year">2024</span>
+                </div>
+                <ul class="cv-entry-points">
+                  <li>PostgreSQL-backed student management system with CRUD operations, advanced queries, and CLI interface.</li>
+                  <li>Stack: PostgreSQL · Python · SQL</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="cv-doc-section">
+              <h2 class="cv-section-heading"><i class="fas fa-language"></i> Languages</h2>
+              <div class="cv-lang-row">
+                <span>Bengali</span><span class="cv-lang-level">Native</span>
+              </div>
+              <div class="cv-lang-row">
+                <span>English</span><span class="cv-lang-level">Professional</span>
+              </div>
+              <div class="cv-lang-row">
+                <span>Hindi</span><span class="cv-lang-level">Conversational</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
@@ -658,18 +908,7 @@
         <div class="footer-social">
           <a href="https://github.com/Anirban-Das04/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
           <a href="https://www.linkedin.com/in/anirban-das-1332473b9/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="mailto:anirban.0009254@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="/cdn-cgi/l/email-protection#3f5e51564d5d5e51110f0f0f060d0a0b7f58525e5653115c5052" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
     </div>
-  </footer>
-
-  <!-- BACK TO TOP -->
-  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-
-  <!-- SCRIPTS -->
-  <script defer src="script.js"></script>
-</body>
-</html>

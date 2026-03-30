@@ -619,3 +619,42 @@ const cardGlowObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 
 allGlassCards.forEach(card => cardGlowObserver.observe(card));
+/* ================================================
+   CV DOWNLOAD — Generates a clean print-style PDF
+   ================================================ */
+function downloadCV() {
+  // Clone the CV document content
+  const cvDoc = document.getElementById('cv-document');
+  if (!cvDoc) return;
+
+  // Create a hidden print area
+  let printArea = document.getElementById('cv-print-area');
+  if (!printArea) {
+    printArea = document.createElement('div');
+    printArea.id = 'cv-print-area';
+    printArea.style.display = 'none';
+    document.body.appendChild(printArea);
+  }
+
+  // Copy CV content into print area
+  printArea.innerHTML = '';
+  const clone = cvDoc.cloneNode(true);
+  clone.style.overflow = 'visible';
+  clone.style.maxHeight = 'none';
+  printArea.appendChild(clone);
+
+  // Temporarily hide the print area's display:none to allow printing
+  printArea.style.display = 'block';
+
+  // Trigger browser print dialog (user saves as PDF)
+  const originalTitle = document.title;
+  document.title = 'Anirban_Das_CV';
+
+  window.print();
+
+  // Restore after print dialog closes
+  setTimeout(() => {
+    printArea.style.display = 'none';
+    document.title = originalTitle;
+  }, 500);
+}
